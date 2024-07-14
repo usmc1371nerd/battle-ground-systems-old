@@ -55,3 +55,7 @@ yarn dev
 ## Backend 
 
 This will be a python flask backend and I will add notes to follow. 
+
+
+## Links
+**https://clerk.com/** 

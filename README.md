@@ -35,10 +35,10 @@ This project aims to develop a robust communication tool for frontline combatant
    cd battleground-comm-tool
 
 
-### Install Dependencies
+## Install Dependencies
 
 npm install
-# or
+or
 yarn install
 
 Create a .env file in the root directory and add your Clerk publishable key:
@@ -49,9 +49,9 @@ You have to setup a account with clerk to get your publishable key.
 
 To run the project:
 npm run dev
-# or 
+or 
 yarn dev
 
-### Backend 
+## Backend 
 
 This will be a python flask backend and I will add notes to follow. 

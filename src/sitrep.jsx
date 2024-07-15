@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 function sitrep() {
   return (
@@ -10,7 +10,8 @@ function sitrep() {
          <div className="salute-report">Salute report</div>
     
     
-    
+      
+      <Link to="/"><button>Return Home</button></Link>
     </div>
     
 

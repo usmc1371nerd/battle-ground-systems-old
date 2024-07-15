@@ -1,8 +1,14 @@
-
+import { Link } from "react-router-dom"
 
 function uxoreport() {
   return (
-    <div>uxoreport</div>
+    <div>uxoreport
+
+    <Link to="/"><button>Return Home</button></Link>
+    </div>
+
+
+    
   )
 }
 

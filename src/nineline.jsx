@@ -32,6 +32,7 @@ const MedEvacForm = () => {
             ...formData,
             [e.target.name]: e.target.value
         });
+        console.log(formData);
     };
 
     const handleSubmit = async (e) => {
@@ -46,7 +47,11 @@ const MedEvacForm = () => {
                         Authorization: `Bearer ${token}`
                     }
                 }
+                
             );
+           
+
+
             if (response.status === 200) {
                 setMessage('Data saved successfully');
             } else {

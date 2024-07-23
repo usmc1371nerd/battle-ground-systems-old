@@ -27,7 +27,7 @@ function Home() {
         </div>
 
         <div className="uxo-report">
-          <Link to="/uxoreport"><h3>UXO</h3></Link>
+          <Link to="/location"><h3>Location</h3></Link>
         </div>
       </div>
       <div className="signout"> <SignOutButton/></div>

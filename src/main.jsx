@@ -6,7 +6,8 @@ import { ClerkProvider } from '@clerk/clerk-react'
 import Home from './home.jsx';
 import Nineline from './nineline.jsx'
 import Sitrep from './sitrep.jsx'
-import UXO from './uxoreport.jsx'
+// import UXO from './uxoreport.jsx'
+import Location from './location.jsx'
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -25,7 +26,8 @@ if (!PUBLISHABLE_KEY) {
             <Route path="*" element={<Navigate to="/" />} />
             <Route path="/nineline" element={<Nineline/>} />
             <Route path="/sitrep" element={<Sitrep/>} />    
-            <Route path="/uxoreport" element={<UXO/> }/>      
+            {/* <Route path="/uxoreport" element={<UXO/> }/>    */}
+            <Route path="/location" element={<Location/> }/>      
           </Routes>
             
          

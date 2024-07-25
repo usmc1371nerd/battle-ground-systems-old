@@ -1,0 +1,271 @@
+.app {
+    
+    height: 110vh;
+    width: 100vw;
+    margin:-8px;
+    background-color: darkgreen;
+}
+
+button{
+    background-color: black;
+    color: aqua;
+    padding: 10px;
+    margin-top: 3px;
+}
+
+/* .control-board .sitrep:hover,
+.control-board .nineline:hover,
+.control-board .uxo-report:hover {
+    box-shadow: 0px 0px 35px white;
+} */
+
+.background-control-board{
+   
+    margin-top: -20px;
+    height: 98vh;
+    width:60vw;
+   
+    
+    
+}
+.control-board{
+    background-image: url(./images/background-control.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    margin-left: -99px;
+    margin-top: -165px;
+    
+
+}
+.center-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: #333; /* The circle color */
+  border-radius: 50%;
+  margin: 185px;
+  top: 265px;
+  border: 4px solid aqua;
+  box-shadow: inset aqua 0px 0px 15px 0px;
+  left: -8px;
+  animation: glow .75s infinite alternate;
+
+}
+
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 15px 0 aqua, 0 0 30px 10px transparent;
+    }
+    50% {
+      box-shadow: 0 0 15px 5px aqua, 0 0 30px 15px aqua;
+    }
+    100% {
+      box-shadow: 0 0 15px 0 aqua, 0 0 30px 10px transparent;
+    }
+  }
+
+.control-item {
+  position: absolute;
+  width: 75px; 
+  height: 65px; 
+  background-color: silver;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  visibility: hidden;
+  transition: .75s ease-in-out;
+  position: absolute;
+  padding: 2px;
+  box-shadow: inset gray 0px 0px 15px 5px; 
+  
+  
+}
+
+.center-circle:hover .control-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+.control-item a {
+
+    text-decoration: none;
+    color: black;
+    height: 65px;
+    width: 75px;
+    
+
+}
+
+.sitrep {
+  transform: translate(-50%, -50%);
+  
+}
+
+.nineline {
+  transform: translate(-50%, -50%);
+}
+
+.uxo-report {
+  transform: translate(-50%, -50%);
+}
+
+.center-circle:hover .sitrep {
+  transform: translate(40px, -75px); /* Adjust for positioning */
+}
+
+.center-circle:hover .nineline {
+  transform: translate(152.5px, 30px); /* Adjust for positioning */
+}
+
+.center-circle:hover .uxo-report {
+  transform: translate(40px, 152.5px); /* Adjust for positioning */
+}
+
+
+.title {
+    background-color: black;
+    color: aqua;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white ;
+
+}
+
+
+
+@media (min-width:250px) and (max-width:500px) {
+
+   
+
+    .control-board {
+        
+        height: 85vh;
+        width: 135vw;
+        margin-left: -65px;
+        margin-top: 25px;
+        position: absolute; /* Positioning method */
+        background-size: contain;
+           
+    }
+
+    .center-circle {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 8px;
+        left:-55px;
+    }
+
+    .center-circle:hover .sitrep {
+        transform: translate(40px, -95px); /* Adjust for positioning */
+      }
+      
+      .center-circle:hover .nineline {
+        transform: translate(152.5px, 15px); /* Adjust for positioning */
+      }
+      
+      .center-circle:hover .uxo-report {
+        transform: translate(40px, 115px); /* Adjust for positioning */
+      }
+      
+    
+}
+
+
+
+
+@media (min-width:1050px) {
+
+   
+
+    .control-board {
+        
+        height: 85vh;
+        width: 50vw;
+        margin-left: -70px;
+        margin-top: 25px;
+        position: absolute; /* Positioning method */
+           
+    }
+
+    .center-circle {
+        position: relative;
+        top: 80px;
+        left:-5px;
+    }
+    
+}
+
+@media (min-width:1440px) {
+  
+    .control-board {
+    
+        height: 85vh;
+    width: 50vw;
+    margin-left: -70px;
+    margin-top: 25px;
+    position: absolute;
+
+}
+
+
+
+}
+
+@media (min-width:1500px) {
+
+   
+
+    .control-board {
+    
+    height: 90vh;
+    width: 50vw;
+    margin-left: -70px;
+    margin-top: 25px;
+    position: absolute;
+    
+
+    }
+
+    .center-circle {
+        position: relative;
+        top: 98px;
+        left:10px;
+
+    }
+
+
+
+}
+
+
+@media (min-width:1500px) {
+
+
+
+    .control-board {
+    
+    height: 90vh;
+    width: 50vw;
+    margin-left: -70px;
+    margin-top: 25px;
+    position: absolute;
+    background-size: contain;
+    
+
+    }
+
+    .center-circle {
+        position: relative;
+        top: 98px;
+        left:10px;
+
+    }
+
+
+
+}

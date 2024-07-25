@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Link } from "react-router-dom"
+import './location.css'
 
 function Location() {
   const [status, setStatus] = useState("Locating...");
@@ -44,9 +45,11 @@ function Location() {
 
   return (
     <div>
+      <div className='background-location'>
       <Link to="/"><button>Return Home</button></Link>
-      <div id="map" style={{ height: '500px', width: '100%' }}></div>
+      <div id="map" style={{ height: '85vh', width: '95%' }}></div>
       <p id="status">{status}</p>
+      </div>
     </div>
   );
 }

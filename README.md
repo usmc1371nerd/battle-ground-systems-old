@@ -47,6 +47,11 @@ VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
 
 You have to setup a account with clerk to get your publishable key. 
 
+List of other dependencies:
+Leaflet
+Axios
+
+
 To run the project:
 npm run dev
 or 

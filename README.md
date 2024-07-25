@@ -51,6 +51,40 @@ List of other dependencies:
 Leaflet
 Axios
 
+**SERVER ISSUES IN DEV**
+you can create a https:// to your dev server so you can retrieve locations.. 
+
+steps needed:
+
+in bash you will need to run each of these seperate.. location is US and you can leave all others blank. 
+
+openssl genrsa -out server.key 2048
+openssl req -new -key server.key -out server.csr
+openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+
+make sure your vite.config.js looks like this
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import fs from 'fs';
+import path from 'path';
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
+    },
+    host: true,
+  },
+});
+ 
+make sure these files are in the root directory
+server.crt
+server.csr
+server.key 
+-----------------------------------------------
 
 To run the project:
 npm run dev
